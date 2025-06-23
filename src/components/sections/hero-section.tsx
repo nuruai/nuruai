@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowDownIcon, ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useTranslation, Trans } from "react-i18next";
 
 export function HeroSection() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
@@ -32,7 +34,7 @@ export function HeroSection() {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary mb-6"
               >
-                Full-Stack Developer & AI Expert
+                {t('hero.badge')}
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -40,7 +42,9 @@ export function HeroSection() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter mb-4"
               >
-                Building <span className="text-primary">intelligent</span> digital experiences
+                <Trans i18nKey="hero.title">
+                  Building <span className="text-primary">intelligent</span> digital experiences
+                </Trans>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -48,7 +52,7 @@ export function HeroSection() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 className="text-xl text-muted-foreground max-w-md"
               >
-                I craft modern web applications and AI solutions that help businesses thrive in the digital era.
+                {t('hero.subtitle')}
               </motion.p>
             </div>
             
@@ -60,12 +64,12 @@ export function HeroSection() {
             >
               <Button asChild size="lg" className="gap-2">
                 <Link href="#projects">
-                  View Projects <ArrowRight className="h-4 w-4" />
+                  {t('hero.viewProjects')} <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="gap-2">
                 <Link href="#contact">
-                  Get in Touch
+                  {t('hero.getInTouch')}
                 </Link>
               </Button>
             </motion.div>
@@ -83,7 +87,7 @@ export function HeroSection() {
               <div className="absolute inset-4 rounded-xl bg-card/80 backdrop-blur-sm flex items-center justify-center">
                 <div className="text-center p-6">
                   <div className="text-4xl font-bold mb-2">Nuruai</div>
-                  <div className="text-muted-foreground">AI Automation Agency</div>
+                  <div className="text-muted-foreground">{t('hero.agency')}</div>
                 </div>
               </div>
             </div>
@@ -96,7 +100,7 @@ export function HeroSection() {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
         >
-          <span className="text-sm text-muted-foreground mb-2">Scroll down</span>
+          <span className="text-sm text-muted-foreground mb-2">{t('hero.scroll')}</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}

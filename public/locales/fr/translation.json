@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "aiSolutions": "Solutions IA",
+    "training": "Formations",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Développeur Full-Stack & Expert IA",
+    "title": "Construire des expériences numériques <1>intelligentes</1>",
+    "subtitle": "Je conçois des applications web modernes et des solutions d'IA qui aident les entreprises à prospérer à l'ère du numérique.",
+    "viewProjects": "Voir les projets",
+    "getInTouch": "Prendre contact",
+    "agency": "Agence d'automatisation IA",
+    "scroll": "Faire défiler"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Un développeur full-stack et entrepreneur passionné, axé sur la création de solutions numériques percutantes.",
+    "paragraph1": "Avec plus de 4 ans d'expérience en développement web, j'ai consacré ma carrière à la création d'expériences utilisateur exceptionnelles et de systèmes backend puissants. Je suis motivé par la résolution de problèmes complexes et la création de solutions innovantes qui font une réelle différence.",
+    "paragraph2": "En tant que développeur, je suis fier d'écrire du code propre et maintenable et de rester à jour avec les technologies émergentes. Ma passion pour l'IA et l'automatisation m'a conduit à fonder Nuruai, où j'aide les entreprises à tirer parti de la puissance de l'intelligence artificielle pour optimiser leurs opérations.",
+    "downloadResume": "Télécharger mon CV",
+    "approachTitle": "Mon Approche",
+    "approachText": "Je suis un développeur passionné avec un talent pour créer des solutions web modernes et efficaces. Mon parcours dans le monde du code a été guidé par une curiosité implacable et le désir de construire des choses qui font la différence. Je suis toujours désireux d'apprendre de nouvelles technologies et de relever des défis qui repoussent mes compétences à leurs limites.",
+    "valuesTitle": "Valeurs Clés",
+    "valuesList": [
+      "L'excellence dans chaque détail",
+      "Une communication claire",
+      "Une gestion de projet transparente",
+      "Un développement éthique de l'IA",
+      "Une innovation continue"
+    ]
+  },
+  "aiSolutions": {
+    "title": "Solutions IA",
+    "subtitle": "Nous fournissons des solutions d'IA de pointe pour aider votre entreprise à croître et à réussir à l'ère numérique.",
+    "solutionsList": [
+      {
+        "title": "Chatbots IA Personnalisés",
+        "description": "Engagez vos clients 24/7 avec des chatbots intelligents et humains, adaptés aux besoins de votre entreprise."
+      },
+      {
+        "title": "Automatisation des Processus",
+        "description": "Automatisez les tâches répétitives et optimisez vos processus métier avec nos solutions d'automatisation personnalisées basées sur l'IA."
+      },
+      {
+        "title": "Analyse de Données & Insights",
+        "description": "Libérez le potentiel de vos données avec nos modèles d'IA qui fournissent des informations exploitables et des analyses prédictives."
+      }
+    ]
+  },
+  "training": {
+    "title": "Formations IA",
+    "subtitle": "Donnez à vous-même et à votre équipe les moyens de réussir grâce à nos programmes de formation en IA dirigés par des experts.",
+    "trainingList": [
+      {
+        "title": "Formation IA en Entreprise",
+        "description": "Dotez votre équipe des compétences en IA nécessaires pour rester compétitive. Nous proposons des programmes de formation sur mesure pour les entreprises."
+      },
+      {
+        "title": "Coaching Individuel",
+        "description": "Bénéficiez d'un coaching personnalisé en IA pour accélérer votre apprentissage et atteindre vos objectifs spécifiques."
+      },
+      {
+        "title": "Cours en Ligne",
+        "description": "Accédez à notre bibliothèque de cours en ligne et apprenez à votre rythme, à tout moment et en tout lieu."
+      }
+    ]
+  }
+}

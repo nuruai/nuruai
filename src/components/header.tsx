@@ -2,25 +2,30 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./language-switcher";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Services", href: "#services" },
-  { name: "Projects", href: "#projects" },
-  { name: "Company", href: "#company" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "#home", key: "nav.home" },
+  { name: "About", href: "#about", key: "nav.about" },
+  { name: "AI Solutions", href: "#ai-solutions", key: "nav.aiSolutions" },
+  { name: "Training", href: "#training", key: "nav.training" },
+  { name: "Services", href: "#services", key: "nav.services" },
+  { name: "Projects", href: "#projects", key: "nav.projects" },
+  { name: "Blog", href: "/blog", key: "nav.blog" },
+  { name: "Contact", href: "#contact", key: "nav.contact" },
 ];
 
 export function Header() {
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -50,10 +55,10 @@ export function Header() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link href="#home" className="ml-2 md:ml-6">
-          <div className="font-bold text-xl">
-            <span className="text-primary">Jospin</span>
-            <span className="text-primary/80 pl-2">N.</span>
+                <Link href="#home" className="ml-2 md:ml-6">
+          <div className="flex items-center gap-2 font-bold text-xl">
+            <Image src="/fivicon.png" alt="Nuruai Logo" width={28} height={28} />
+            <span className="text-primary">Nuruai</span>
           </div>
         </Link>
 
@@ -65,23 +70,26 @@ export function Header() {
               href={item.href}
               className="px-3 py-2 text-sm font-medium hover:text-primary transition-colors"
             >
-              {item.name}
+              {t(item.key)}
             </Link>
           ))}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="ml-2"
-            aria-label="Toggle theme"
-          >
-            <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          </Button>
+          <div className="flex items-center gap-2 ml-2">
+            <LanguageSwitcher />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              aria-label="Toggle theme"
+            >
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            </Button>
+          </div>
         </nav>
 
         {/* Mobile Navigation */}
         <div className="flex items-center md:hidden">
+          <LanguageSwitcher />
           <Button
             variant="ghost"
             size="icon"
@@ -107,7 +115,7 @@ export function Header() {
                     href={item.href}
                     className="px-2 py-1 text-lg font-medium hover:text-primary transition-colors"
                   >
-                    {item.name}
+                    {t(item.key)}
                   </Link>
                 ))}
               </nav>

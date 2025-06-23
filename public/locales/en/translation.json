@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "aiSolutions": "AI Solutions",
+    "training": "Training",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Full-Stack Developer & AI Expert",
+    "title": "Building <1>intelligent</1> digital experiences",
+    "subtitle": "I craft modern web applications and AI solutions that help businesses thrive in the digital era.",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get in Touch",
+    "agency": "AI Automation Agency",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A passionate full-stack developer and entrepreneur with a focus on creating impactful digital solutions.",
+    "paragraph1": "With over 4 years of experience in web development, I've dedicated my career to crafting exceptional user experiences and powerful backend systems. I'm driven by solving complex problems and creating innovative solutions that make a real difference.",
+    "paragraph2": "As a developer, I pride myself on writing clean, maintainable code and staying current with emerging technologies. My passion for AI and automation led me to found Nuruai, where I help businesses leverage the power of artificial intelligence to streamline their operations.",
+    "downloadResume": "Download my Resume",
+    "approachTitle": "My Approach",
+    "approachText": "I'm a passionate developer with a knack for creating modern and efficient web solutions. My journey in the world of code has been driven by a relentless curiosity and a desire to build things that make a difference. I'm always eager to learn new technologies and take on challenging projects that push my skills to the limit.",
+    "valuesTitle": "Key Values",
+    "valuesList": [
+      "Excellence in every detail",
+      "Clear communication",
+      "Transparent project management",
+      "Ethical AI development",
+      "Continuous innovation"
+    ]
+  },
+  "aiSolutions": {
+    "title": "AI Solutions",
+    "subtitle": "We provide cutting-edge AI solutions to help your business grow and succeed in the digital age.",
+    "solutionsList": [
+      {
+        "title": "Custom AI Chatbots",
+        "description": "Engage your customers 24/7 with intelligent, human-like chatbots tailored to your business needs."
+      },
+      {
+        "title": "Workflow Automation",
+        "description": "Automate repetitive tasks and streamline your business processes with our custom AI-powered automation solutions."
+      },
+      {
+        "title": "Data Analysis & Insights",
+        "description": "Unlock the power of your data with our AI models that provide actionable insights and predictive analytics."
+      }
+    ]
+  },
+  "training": {
+    "title": "AI Training",
+    "subtitle": "Empower yourself and your team with our expert-led AI training programs.",
+    "trainingList": [
+      {
+        "title": "Corporate AI Training",
+        "description": "Equip your team with the AI skills they need to stay competitive. We offer customized training programs for businesses."
+      },
+      {
+        "title": "One-on-One Coaching",
+        "description": "Get personalized AI coaching to accelerate your learning and achieve your specific goals."
+      },
+      {
+        "title": "Online Courses",
+        "description": "Access our library of online courses and learn at your own pace, anytime, anywhere."
+      }
+    ]
+  }
+}
