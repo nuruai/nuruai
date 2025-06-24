@@ -4,7 +4,7 @@ type Item = {
     description: string;
 };
 
-type Section = {
+export type Section = {
     key: string;
     title: string;
     subtitle: string;
@@ -13,7 +13,7 @@ type Section = {
     items: Item[];
 };
 
-export const sections: Section[] = [
+const sections: Section[] = [
     {
         key: "webDevelopment",
         title: "Développement Web",

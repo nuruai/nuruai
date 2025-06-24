@@ -90,5 +90,10 @@
     "strategyDescription": "We develop a tailored AI strategy, including technology selection, solution design, and integration planning.",
     "executionTitle": "3. Execution Phase",
     "executionDescription": "We develop and deploy AI automation solutions, ensuring seamless integration and ongoing support to optimize performance."
+  },
+  "section": {
+    "notFoundTitle": "Section Not Found",
+    "notFoundDescription": "The section '{{slug}}' you are looking for does not exist.",
+    "goBack": "Go Back"
   }
 }

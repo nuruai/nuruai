@@ -90,5 +90,10 @@
     "strategyDescription": "Nous élaborons une stratégie d'IA sur mesure, incluant la sélection des technologies, la conception de la solution et la planification de l'intégration.",
     "executionTitle": "3. Phase d'Exécution",
     "executionDescription": "Nous développons et déployons les solutions d'automatisation IA, en assurant une intégration transparente et un support continu pour optimiser leurs performances."
+  },
+  "section": {
+    "notFoundTitle": "Section Introuvable",
+    "notFoundDescription": "La section '{{slug}}' que vous recherchez n'existe pas.",
+    "goBack": "Retourner"
   }
 }
