@@ -11,9 +11,9 @@ import { ExternalLink, Github } from "lucide-react";
 
 
 
-type ProjectCategory = "all" | "web" | "mobile" | "ai";
+export type ProjectCategory = "all" | "web" | "mobile" | "ai";
 
-interface Project {
+export interface Project {
   id: number;
   title: string;
   description: string;
@@ -24,12 +24,7 @@ interface Project {
   githubUrl?: string;
 }
 
-export function ProjectsSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all");
-  
-  const projects: Project[] = [
+export const projects: Project[] = [
     {
       id: 1,
       title: "CVComet",
@@ -62,6 +57,11 @@ export function ProjectsSection() {
     }
   ];
 
+export function ProjectsSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all");
+  
   const filteredProjects = activeCategory === "all" 
     ? projects 
     : projects.filter(project => project.categories.includes(activeCategory));
@@ -125,7 +125,7 @@ export function ProjectsSection() {
   );
 }
 
-function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="overflow-hidden h-full flex flex-col">
       <div className="relative h-48 overflow-hidden">

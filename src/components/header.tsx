@@ -13,14 +13,14 @@ import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./language-switcher";
 
 const navItems = [
-  { name: "Home", href: "#home", key: "nav.home" },
-  { name: "About", href: "#about", key: "nav.about" },
-  { name: "AI Solutions", href: "#ai-solutions", key: "nav.aiSolutions" },
-  { name: "Training", href: "#training", key: "nav.training" },
-  { name: "Services", href: "#services", key: "nav.services" },
-  { name: "Projects", href: "#projects", key: "nav.projects" },
+  { name: "Home", href: "/", key: "nav.home" },
+  { name: "About", href: "/about", key: "nav.about" },
+  { name: "AI Solutions", href: "/ai-solutions", key: "nav.aiSolutions" },
+  { name: "Training", href: "/training", key: "nav.training" },
+  { name: "Services", href: "/services", key: "nav.services" },
+  { name: "Projects", href: "/projects", key: "nav.projects" },
   { name: "Blog", href: "/blog", key: "nav.blog" },
-  { name: "Contact", href: "#contact", key: "nav.contact" },
+  { name: "Contact", href: "/contacts", key: "nav.contact" },
 ];
 
 export function Header() {
@@ -51,11 +51,11 @@ export function Header() {
         "fixed top-0 w-full z-50 transition-all duration-300",
         scrolled
           ? "bg-background/80 backdrop-blur-md shadow-md py-3"
-          : "bg-transparent py-5"
+          : "bg-background/80 py-5"
       )}
     >
       <div className="container flex items-center justify-between">
-                <Link href="#home" className="ml-2 md:ml-6">
+                <Link href="/" className="ml-2 md:ml-6">
           <div className="flex items-center gap-2 font-bold text-xl">
             <Image src="/fivicon.png" alt="Nuruai Logo" width={28} height={28} />
             <span className="text-primary">Nuruai</span>

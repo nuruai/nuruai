@@ -70,5 +70,25 @@
         "description": "Accédez à notre bibliothèque de cours en ligne et apprenez à votre rythme, à tout moment et en tout lieu."
       }
     ]
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Choisir Nuruai ?",
+    "description": "Chez Nuruai, nous combinons prouesses techniques et compréhension approfondie de vos besoins métier pour vous offrir des solutions d'IA qui font réellement la différence.",
+    "innovationTitle": "Solutions Innovantes",
+    "innovationDescription": "Nous apportons des technologies d'IA de pointe et des approches créatives pour résoudre vos défis commerciaux uniques.",
+    "expertiseTitle": "Expertise Inégalée",
+    "expertiseDescription": "Notre équipe est composée de spécialistes et de développeurs IA chevronnés dédiés à l'excellence et à la fourniture de résultats percutants.",
+    "resultsTitle": "Résultats Tangibles",
+    "resultsDescription": "Nous nous concentrons sur la production de résultats mesurables, en veillant à ce que nos solutions d'IA génèrent une réelle valeur et un retour sur investissement pour votre entreprise."
+  },
+  "ourProcess": {
+    "title": "Notre Processus de Travail",
+    "description": "Notre approche structurée garantit des solutions d'automatisation IA efficaces et personnalisées, de la conception à l'implémentation.",
+    "discoveryTitle": "1. Phase de Découverte",
+    "discoveryDescription": "Nous commençons par une analyse approfondie de vos besoins, de vos processus existants et de vos objectifs pour identifier les opportunités d'automatisation IA.",
+    "strategyTitle": "2. Développement de la Stratégie",
+    "strategyDescription": "Nous élaborons une stratégie d'IA sur mesure, incluant la sélection des technologies, la conception de la solution et la planification de l'intégration.",
+    "executionTitle": "3. Phase d'Exécution",
+    "executionDescription": "Nous développons et déployons les solutions d'automatisation IA, en assurant une intégration transparente et un support continu pour optimiser leurs performances."
   }
 }

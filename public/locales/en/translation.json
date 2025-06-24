@@ -70,5 +70,25 @@
         "description": "Access our library of online courses and learn at your own pace, anytime, anywhere."
       }
     ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Nuruai?",
+    "description": "At Nuruai, we combine technical prowess with a deep understanding of your business needs to deliver AI solutions that truly make a difference.",
+    "innovationTitle": "Innovative Solutions",
+    "innovationDescription": "We bring cutting-edge AI technologies and creative approaches to solve your unique business challenges.",
+    "expertiseTitle": "Unrivaled Expertise",
+    "expertiseDescription": "Our team comprises seasoned AI specialists and developers dedicated to delivering excellence and impactful results.",
+    "resultsTitle": "Tangible Results",
+    "resultsDescription": "We focus on delivering measurable outcomes, ensuring our AI solutions drive real value and ROI for your business."
+  },
+  "ourProcess": {
+    "title": "Our Work Process",
+    "description": "Our structured approach ensures effective and customized AI automation solutions, from conception to implementation.",
+    "discoveryTitle": "1. Discovery Phase",
+    "discoveryDescription": "We begin with an in-depth analysis of your needs, existing processes, and goals to identify AI automation opportunities.",
+    "strategyTitle": "2. Strategy Development",
+    "strategyDescription": "We develop a tailored AI strategy, including technology selection, solution design, and integration planning.",
+    "executionTitle": "3. Execution Phase",
+    "executionDescription": "We develop and deploy AI automation solutions, ensuring seamless integration and ongoing support to optimize performance."
   }
 }

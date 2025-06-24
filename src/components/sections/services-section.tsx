@@ -16,7 +16,7 @@ interface ServiceCardProps {
   index: number;
 }
 
-const ServiceCard = ({ icon, title, description, features, index }: ServiceCardProps) => {
+export const ServiceCard = ({ icon, title, description, features, index }: ServiceCardProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -59,48 +59,48 @@ const ServiceCard = ({ icon, title, description, features, index }: ServiceCardP
   );
 };
 
+export const services = [
+  {
+    icon: <Code className="h-6 w-6" />,
+    title: "Website & Web App Development",
+    description: "Custom web solutions tailored to your business needs.",
+    features: [
+      "Modern, responsive websites",
+      "Progressive Web Applications (PWAs)",
+      "E-commerce solutions",
+      "Content management systems",
+      "Dashboard & admin interfaces"
+    ]
+  },
+  {
+    icon: <Cpu className="h-6 w-6" />,
+    title: "AI-Based Automation",
+    description: "Streamline your operations with intelligent automation.",
+    features: [
+      "Workflow optimization",
+      "Data processing automation",
+      "Custom AI integrations",
+      "Intelligent document processing",
+      "AI-powered analytics solutions"
+    ]
+  },
+  {
+    icon: <Bot className="h-6 w-6" />,
+    title: "Custom AI Agent Development",
+    description: "Specialized AI agents designed for your specific needs.",
+    features: [
+      "Virtual assistants & chatbots",
+      "Industry-specific AI solutions",
+      "Natural language processing systems",
+      "Predictive analytics tools",
+      "Computer vision applications"
+    ]
+  }
+];
+
 export function ServicesSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
-
-  const services = [
-    {
-      icon: <Code className="h-6 w-6" />,
-      title: "Website & Web App Development",
-      description: "Custom web solutions tailored to your business needs.",
-      features: [
-        "Modern, responsive websites",
-        "Progressive Web Applications (PWAs)",
-        "E-commerce solutions",
-        "Content management systems",
-        "Dashboard & admin interfaces"
-      ]
-    },
-    {
-      icon: <Cpu className="h-6 w-6" />,
-      title: "AI-Based Automation",
-      description: "Streamline your operations with intelligent automation.",
-      features: [
-        "Workflow optimization",
-        "Data processing automation",
-        "Custom AI integrations",
-        "Intelligent document processing",
-        "AI-powered analytics solutions"
-      ]
-    },
-    {
-      icon: <Bot className="h-6 w-6" />,
-      title: "Custom AI Agent Development",
-      description: "Specialized AI agents designed for your specific needs.",
-      features: [
-        "Virtual assistants & chatbots",
-        "Industry-specific AI solutions",
-        "Natural language processing systems",
-        "Predictive analytics tools",
-        "Computer vision applications"
-      ]
-    }
-  ];
 
   return (
     <section id="services" className="py-24 relative">
