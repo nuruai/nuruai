@@ -5,8 +5,9 @@ import { useRef } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Bot, Cpu } from "lucide-react";
+import { ArrowRight, Code, Bot, Cpu, Lightbulb, TrendingUp, Shield, Layers, Globe, GraduationCap } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -16,7 +17,20 @@ interface ServiceCardProps {
   index: number;
 }
 
+const serviceIcons = [
+  <Code className="h-6 w-6" />,
+  <Cpu className="h-6 w-6" />,
+  <Bot className="h-6 w-6" />,
+  <Lightbulb className="h-6 w-6" />,
+  <TrendingUp className="h-6 w-6" />,
+  <Shield className="h-6 w-6" />,
+  <Layers className="h-6 w-6" />,
+  <Globe className="h-6 w-6" />,
+  <GraduationCap className="h-6 w-6" />,
+];
+
 export const ServiceCard = ({ icon, title, description, features, index }: ServiceCardProps) => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -49,7 +63,7 @@ export const ServiceCard = ({ icon, title, description, features, index }: Servi
         <CardFooter>
           <Button asChild variant="ghost" className="w-full mt-4">
             <Link href="#contact" className="w-full flex items-center justify-between">
-              <span>Learn more</span>
+              <span>{t("servicesSection.learnMore")}</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
@@ -59,48 +73,31 @@ export const ServiceCard = ({ icon, title, description, features, index }: Servi
   );
 };
 
-export const services = [
-  {
-    icon: <Code className="h-6 w-6" />,
-    title: "Website & Web App Development",
-    description: "Custom web solutions tailored to your business needs.",
-    features: [
-      "Modern, responsive websites",
-      "Progressive Web Applications (PWAs)",
-      "E-commerce solutions",
-      "Content management systems",
-      "Dashboard & admin interfaces"
-    ]
-  },
-  {
-    icon: <Cpu className="h-6 w-6" />,
-    title: "AI-Based Automation",
-    description: "Streamline your operations with intelligent automation.",
-    features: [
-      "Workflow optimization",
-      "Data processing automation",
-      "Custom AI integrations",
-      "Intelligent document processing",
-      "AI-powered analytics solutions"
-    ]
-  },
-  {
-    icon: <Bot className="h-6 w-6" />,
-    title: "Custom AI Agent Development",
-    description: "Specialized AI agents designed for your specific needs.",
-    features: [
-      "Virtual assistants & chatbots",
-      "Industry-specific AI solutions",
-      "Natural language processing systems",
-      "Predictive analytics tools",
-      "Computer vision applications"
-    ]
-  }
-];
-
 export function ServicesSection() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  const services = [
+    {
+      icon: serviceIcons[0],
+      title: t("servicesSection.servicesList.0.title"),
+      description: t("servicesSection.servicesList.0.description"),
+      features: t("servicesSection.servicesList.0.features", { returnObjects: true }) as string[],
+    },
+    {
+      icon: serviceIcons[1],
+      title: t("servicesSection.servicesList.1.title"),
+      description: t("servicesSection.servicesList.1.description"),
+      features: t("servicesSection.servicesList.1.features", { returnObjects: true }) as string[],
+    },
+    {
+      icon: serviceIcons[2],
+      title: t("servicesSection.servicesList.2.title"),
+      description: t("servicesSection.servicesList.2.description"),
+      features: t("servicesSection.servicesList.2.features", { returnObjects: true }) as string[],
+    },
+  ];
 
   return (
     <section id="services" className="py-24 relative">
@@ -112,11 +109,10 @@ export function ServicesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("servicesSection.title")}</h2>
           <Separator className="w-20 mx-auto mb-6" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Specialized solutions to help your business thrive in the digital world.
-            From web development to advanced AI systems.
+            {t("servicesSection.subtitle")}
           </p>
         </motion.div>
 

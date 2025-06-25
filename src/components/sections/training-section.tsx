@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Users, Video } from "lucide-react";
+import { BookOpen, BrainCircuit, Code, Megaphone, Search, Users, Video } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export function TrainingSection() {
@@ -13,11 +13,20 @@ export function TrainingSection() {
   const { t } = useTranslation();
   const translatedTrainings = t('training.trainingList', { returnObjects: true }) as { title: string, description: string }[];
 
+  // const trainingIcons = [
+  //     <BookOpen key="book" className="h-10 w-10 text-primary" />,
+  //     <Users key="users" className="h-10 w-10 text-primary" />,
+  //     <Video key="video" className="h-10 w-10 text-primary" />
+  // ];
   const trainingIcons = [
-      <BookOpen key="book" className="h-10 w-10 text-primary" />,
+      <Search key="search" className="h-10 w-10 text-primary" />,
+      <BrainCircuit key="brain" className="h-10 w-10 text-primary" />,
       <Users key="users" className="h-10 w-10 text-primary" />,
-      <Video key="video" className="h-10 w-10 text-primary" />
-  ];
+      <Megaphone key="megaphone" className="h-10 w-10 text-primary" />,
+      <Code key="code" className="h-10 w-10 text-primary" />,
+      <BookOpen key="book" className="h-10 w-10 text-primary" />,
+      <Video key="video" className="h-10 w-10 text-primary" />,
+    ];
 
   const trainings = Array.isArray(translatedTrainings) ? translatedTrainings.map((training, index) => ({
       ...training,

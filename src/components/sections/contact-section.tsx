@@ -20,17 +20,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, Mail, MapPin, Phone, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+  name: z.string().min(2, { message: "{{t('contactSection.validation.nameMin')}}" }),
+  email: z.string().email({ message: "{{t('contactSection.validation.emailInvalid')}}" }),
+  subject: z.string().min(5, { message: "{{t('contactSection.validation.subjectMin')}}" }),
+  message: z.string().min(10, { message: "{{t('contactSection.validation.messageMin')}}" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 export function ContactSection() {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -60,21 +62,21 @@ export function ContactSection() {
 
       if (response.ok) {
         toast({
-          title: "Message sent successfully!",
-          description: "Thank you for reaching out. I&apos;ll get back to you soon.",
+          title: t("contactSection.toast.successTitle"),
+          description: t("contactSection.toast.successDescription"),
         });
         form.reset();
       } else {
         toast({
-          title: "Failed to send message",
-          description: "Please try again later.",
+          title: t("contactSection.toast.failureTitle"),
+          description: t("contactSection.toast.failureDescription"),
           variant: "destructive",
         });
       }
     } catch (_) {
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
+        title: t("contactSection.toast.errorTitle"),
+        description: t("contactSection.toast.errorDescription"),
         variant: "destructive",
       });
     } finally {
@@ -86,17 +88,17 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5" />,
-      label: "Email",
+      label: t("contactSection.emailLabel"),
       value: "jospinndagano1@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
-      label: "Phone",
+      label: t("contactSection.phoneLabel"),
       value: "+250 725 514 275",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: "Location",
+      label: t("contactSection.locationLabel"),
       value: "Kigali, Rwanda",
     },
   ];
@@ -112,11 +114,10 @@ export function ContactSection() {
           className="max-w-5xl mx-auto"
         >
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("contactSection.title")}</h2>
             <Separator className="w-20 mx-auto mb-6" />
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Have a project in mind or want to discuss potential collaborations?
-              I&apos;d love to hear from you!
+              {t("contactSection.subtitle")}
             </p>
           </div>
 
@@ -130,9 +131,9 @@ export function ContactSection() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Name</FormLabel>
+                          <FormLabel>{t("contactSection.form.nameLabel")}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Your name" {...field} />
+                            <Input placeholder={t("contactSection.form.namePlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -143,9 +144,9 @@ export function ContactSection() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email</FormLabel>
+                          <FormLabel>{t("contactSection.form.emailLabel")}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Your email address" {...field} />
+                            <Input placeholder={t("contactSection.form.emailPlaceholder")} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -157,9 +158,9 @@ export function ContactSection() {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>{t("contactSection.form.subjectLabel")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Subject of your message" {...field} />
+                          <Input placeholder={t("contactSection.form.subjectPlaceholder")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -170,10 +171,10 @@ export function ContactSection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>{t("contactSection.form.messageLabel")}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Your message"
+                            placeholder={t("contactSection.form.messagePlaceholder")}
                             className="min-h-32"
                             {...field}
                           />
@@ -186,12 +187,12 @@ export function ContactSection() {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Sending...
+                        {t("contactSection.form.sending")}
                       </>
                     ) : (
                       <>
                         <Send className="mr-2 h-4 w-4" />
-                        Send Message
+                        {t("contactSection.form.sendButton")}
                       </>
                     )}
                   </Button>
@@ -201,7 +202,7 @@ export function ContactSection() {
 
             <div>
               <div className="bg-card rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-xl font-semibold mb-6">{t("contactSection.contactInfoTitle")}</h3>
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
                     <div key={index} className="flex">

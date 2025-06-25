@@ -1,8 +1,11 @@
+"use client"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-muted/30 py-12">
       <div className="container mx-auto px-4">
@@ -14,21 +17,21 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-muted-foreground max-w-md">
-              Full-stack developer with expertise in modern web technologies and AI solutions.
-              Founder of Nuruai, helping businesses automate workflows with AI.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-base mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-base mb-4">{t("footer.quickLinks")}
+            </h3>
             <ul className="space-y-2">
-              {["Home", "About", "Skills", "Services", "Projects", "Contact"].map((item) => (
+              {["Home", "About", "AI Solutions", "Training", "IT Solutions", "Blog", "Contact"].map((item) => (
                 <li key={item}>
-                  <Link 
-                    href={`#${item.toLowerCase()}`}
+                  <Link
+                    href={`/${item.toLowerCase().replace(/ /g, "-").replace("ai-solutions", "ai-solutions").replace("it-solutions", "it-solutions")}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {item}
+                    {t(`nav.${item.toLowerCase().replace(/ /g, "")}`)}
                   </Link>
                 </li>
               ))}
@@ -36,7 +39,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-base mb-4">Connect</h3>
+            <h3 className="font-semibold text-base mb-4">{t("footer.connect")}
+            </h3>
             <div className="flex space-x-3 mb-4">
               <Button variant="ghost" size="icon" asChild>
                 <Link href="https://github.com/Jospin6" target="_blank" rel="noreferrer">
@@ -62,17 +66,17 @@ export function Footer() {
             </p>
           </div>
         </div>
-        
+
         <div className="border-t border-muted mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Nuruai. All rights reserved.
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
+              {t("footer.privacyPolicy")}
             </Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms of Service
+              {t("footer.termsOfService")}
             </Link>
           </div>
         </div>

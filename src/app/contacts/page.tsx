@@ -21,10 +21,10 @@ import {
 import { Button } from "@/components/ui/button";
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+  name: z.string().min(2, { message: "{{t('contactPage.validation.nameMin')}}" }),
+  email: z.string().email({ message: "{{t('contactPage.validation.emailInvalid')}}" }),
+  subject: z.string().min(5, { message: "{{t('contactPage.validation.subjectMin')}}" }),
+  message: z.string().min(10, { message: "{{t('contactPage.validation.messageMin')}}" }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -65,21 +65,21 @@ export default function Contact() {
 
       if (response.ok) {
         toast({
-          title: "Message sent successfully!",
-          description: "Thank you for reaching out. I&apos;ll get back to you soon.",
+          title: t("contactPage.toast.successTitle"),
+          description: t("contactPage.toast.successDescription"),
         });
         form.reset();
       } else {
         toast({
-          title: "Failed to send message",
-          description: "Please try again later.",
+          title: t("contactPage.toast.failureTitle"),
+          description: t("contactPage.toast.failureDescription"),
           variant: "destructive",
         });
       }
     } catch (_) {
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
+        title: t("contactPage.toast.errorTitle"),
+        description: t("contactPage.toast.errorDescription"),
         variant: "destructive",
       });
     } finally {
@@ -91,17 +91,17 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5" />,
-      label: "Email",
+      label: t("contactPage.emailLabel"),
       value: "jospinndagano1@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
-      label: "Phone",
+      label: t("contactPage.phoneLabel"),
       value: "+250 725 514 275",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: "Location",
+      label: t("contactPage.locationLabel"),
       value: "Kigali, Rwanda",
     },
   ];
@@ -111,10 +111,10 @@ export default function Contact() {
       <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/contact-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div variants={itemVariants} className="text-center z-10 pt-10 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contactez-nous</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("contactPage.title")}</h2>
           <Separator className="w-20 mx-auto mb-6" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Une question, un projet ? Notre équipe est à votre écoute.
+            {t("contactPage.subtitle")}
           </p>
         </motion.div>
       </div>
@@ -129,9 +129,9 @@ export default function Contact() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel>{t("contactPage.form.nameLabel")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your name" {...field} />
+                          <Input placeholder={t("contactPage.form.namePlaceholder")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -142,9 +142,9 @@ export default function Contact() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>{t("contactPage.form.emailLabel")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your email address" {...field} />
+                          <Input placeholder={t("contactPage.form.emailPlaceholder")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -156,9 +156,9 @@ export default function Contact() {
                   name="subject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Subject</FormLabel>
+                      <FormLabel>{t("contactPage.form.subjectLabel")}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Subject of your message" {...field} />
+                        <Input placeholder={t("contactPage.form.subjectPlaceholder")} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -169,10 +169,10 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>{t("contactPage.form.messageLabel")}</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Your message"
+                          placeholder={t("contactPage.form.messagePlaceholder")}
                           className="min-h-32"
                           {...field}
                         />
@@ -185,12 +185,12 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
+                      {t("contactPage.form.sending")}
                     </>
                   ) : (
                     <>
                       <Send className="mr-2 h-4 w-4" />
-                      Send Message
+                      {t("contactPage.form.sendButton")}
                     </>
                   )}
                 </Button>
@@ -200,7 +200,7 @@ export default function Contact() {
 
           <div>
             <div className="bg-card rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-6">{t("contactPage.contactInfoTitle")}</h3>
               <div className="space-y-6">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex">

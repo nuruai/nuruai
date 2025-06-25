@@ -55,15 +55,16 @@ export function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button asChild size="lg" className="gap-2">
-                <Link href="#projects">
-                  {t('hero.viewProjects')} <ArrowRight className="h-4 w-4" />
+                <Link href="https://calendly.com/nuruai/30min" target="_blank" rel="noopener noreferrer">
+                {t('hero.getInTouch')} <ArrowRight className="h-4 w-4" />
+                  {/* {t('hero.viewProjects')} <ArrowRight className="h-4 w-4" /> */}
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2">
+              {/* <Button asChild variant="outline" size="lg" className="gap-2">
                 <Link href="#contact">
                   {t('hero.getInTouch')}
                 </Link>
-              </Button>
+              </Button> */}
             </motion.div>
           </motion.div>
           

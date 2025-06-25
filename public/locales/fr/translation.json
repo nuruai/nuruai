@@ -2,38 +2,38 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "aiSolutions": "Solutions IA",
+    "aisolutions": "Solutions IA",
     "training": "Formations",
     "services": "Services",
     "projects": "Projets",
-    "itSolutions": "Services IT",
+    "itsolutions": "Services IT",
     "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
     "badge": "Développeur Full-Stack & Expert IA",
     "title": "Construire des expériences numériques <1>intelligentes</1>",
-    "subtitle": "Je conçois des applications web modernes et des solutions d'IA qui aident les entreprises à prospérer à l'ère du numérique.",
+    "subtitle": "On conçoit des applications web modernes et des solutions d'IA qui aident les entreprises à prospérer à l'ère du numérique.",
     "viewProjects": "Voir les projets",
     "getInTouch": "Prendre contact",
     "agency": "Agence d'automatisation IA",
     "scroll": "Faire défiler"
   },
   "about": {
-    "title": "À propos de moi",
-    "subtitle": "Un développeur full-stack et entrepreneur passionné, axé sur la création de solutions numériques percutantes.",
-    "paragraph1": "Avec plus de 4 ans d'expérience en développement web, j'ai consacré ma carrière à la création d'expériences utilisateur exceptionnelles et de systèmes backend puissants. Je suis motivé par la résolution de problèmes complexes et la création de solutions innovantes qui font une réelle différence.",
-    "paragraph2": "En tant que développeur, je suis fier d'écrire du code propre et maintenable et de rester à jour avec les technologies émergentes. Ma passion pour l'IA et l'automatisation m'a conduit à fonder Nuruai, où j'aide les entreprises à tirer parti de la puissance de l'intelligence artificielle pour optimiser leurs opérations.",
-    "downloadResume": "Télécharger mon CV",
-    "approachTitle": "Mon Approche",
-    "approachText": "Je suis un développeur passionné avec un talent pour créer des solutions web modernes et efficaces. Mon parcours dans le monde du code a été guidé par une curiosité implacable et le désir de construire des choses qui font la différence. Je suis toujours désireux d'apprendre de nouvelles technologies et de relever des défis qui repoussent mes compétences à leurs limites.",
-    "valuesTitle": "Valeurs Clés",
+    "title": "À Propos de Nuruai",
+    "subtitle": "Votre Partenaire en Transformation Digitale par l'IA",
+    "paragraph1": "Nuruai est une agence spécialisée dans l'automatisation des processus métier grâce à l'intelligence artificielle et le développement de logiciels. Nous accompagnons les entreprises africaines dans leur transformation digitale en concevant des solutions sur mesure pour automatiser les tâches répétitives, optimiser les workflows et améliorer la productivité.",
+    "paragraph2": "Grâce à une combinaison de technologies no-code, d'outils IA avancés et d'intégrations intelligentes, Nuruai permet aux entreprises de gagner du temps, de réduire les coûts et de se concentrer sur l'essentiel : la croissance.",
+    "downloadResume": "Télécharger Notre Brochure",
+    "approachTitle": "Notre Approche",
+    "approachText": "Nous sommes animés par une passion pour l'innovation et un engagement à produire des résultats tangibles. Notre approche combine une expertise technique approfondie avec une compréhension aiguisée des besoins uniques de chaque entreprise, garantissant des solutions non seulement avancées mais aussi pratiques et impactantes.",
+    "valuesTitle": "Valeurs Fondamentales",
     "valuesList": [
-      "L'excellence dans chaque détail",
-      "Une communication claire",
-      "Une gestion de projet transparente",
-      "Un développement éthique de l'IA",
-      "Une innovation continue"
+      "L'innovation au cœur",
+      "Solutions centrées sur le client",
+      "Transparence et intégrité",
+      "Évolutivité et efficacité",
+      "Croissance durable"
     ]
   },
   "aiSolutions": {
@@ -79,7 +79,7 @@
     ]
   },
   "training": {
-    "title": "Formations IA",
+    "title": "Formations",
     "subtitle": "Donnez à vous-même et à votre équipe les moyens de réussir grâce à nos programmes de formation en IA dirigés par des experts.",
     "trainingList": [
       {
@@ -152,5 +152,168 @@
     "digitalMarketingDescription": "Conception et mise en œuvre de campagnes de marketing numérique efficaces pour accroître la notoriété de la marque, générer des prospects et stimuler les ventes.",
     "educationERPTitle": "Logiciel ERP Éducation",
     "educationERPDescription": "Développement et déploiement de solutions de planification des ressources d'entreprise spécifiquement conçues pour les établissements d'enseignement afin de gérer les tâches administratives."
+  },
+  "contactPage": {
+    "validation": {
+      "nameMin": "Le nom doit contenir au moins 2 caractères.",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide.",
+      "subjectMin": "Le sujet doit contenir au moins 5 caractères.",
+      "messageMin": "Le message doit contenir au moins 10 caractères."
+    },
+    "toast": {
+      "successTitle": "Message envoyé avec succès !",
+      "successDescription": "Merci de nous avoir contactés. Nous vous répondrons bientôt.",
+      "failureTitle": "Échec de l'envoi du message",
+      "failureDescription": "Veuillez réessayer plus tard.",
+      "errorTitle": "Erreur",
+      "errorDescription": "Quelque chose s'est mal passé. Veuillez réessayer."
+    },
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Emplacement",
+    "title": "Contactez-nous",
+    "subtitle": "Une question, un projet ? Notre équipe est à votre écoute.",
+    "contactInfoTitle": "Informations de contact",
+    "form": {
+      "nameLabel": "Nom",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "Votre adresse e-mail",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Objet de votre message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Votre message",
+      "sending": "Envoi...",
+      "sendButton": "Envoyer le message"
+    }
+  },
+  "contactSection": {
+    "validation": {
+      "nameMin": "Le nom doit contenir au moins 2 caractères.",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide.",
+      "subjectMin": "Le sujet doit contenir au moins 5 caractères.",
+      "messageMin": "Le message doit contenir au moins 10 caractères."
+    },
+    "toast": {
+      "successTitle": "Message envoyé avec succès !",
+      "successDescription": "Merci de nous avoir contactés. Nous vous répondrons bientôt.",
+      "failureTitle": "Échec de l'envoi du message",
+      "failureDescription": "Veuillez réessayer plus tard.",
+      "errorTitle": "Erreur",
+      "errorDescription": "Quelque chose s'est mal passé. Veuillez réessayer."
+    },
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Emplacement",
+    "title": "Prendre Contact",
+    "subtitle": "Vous avez un projet en tête ou souhaitez discuter de collaborations potentielles ? J'aimerais avoir de vos nouvelles !",
+    "contactInfoTitle": "Informations de contact",
+    "form": {
+      "nameLabel": "Nom",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "Votre adresse e-mail",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Objet de votre message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Votre message",
+      "sending": "Envoi...",
+      "sendButton": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "description": "Nuruai est une agence d'automatisation de l'IA spécialisée dans la transformation des entreprises grâce à des logiciels intelligents et des solutions basées sur l'IA. Nous aidons à optimiser les flux de travail, à automatiser les tâches répétitives et à stimuler l'innovation pour une croissance durable.",
+    "quickLinks": "Liens Rapides",
+    "connect": "Connecter",
+    "copyright": "© {{year}} Nuruai. Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation"
+  },
+  "servicesPage": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions spécialisées pour aider votre entreprise à prospérer dans le monde numérique. Du développement web aux systèmes d'IA avancés."
+  },
+  "servicesSection": {
+    "learnMore": "En savoir plus",
+    "title": "Nos Services",
+    "subtitle": "Des solutions spécialisées pour aider votre entreprise à prospérer dans le monde numérique. Du développement web aux systèmes d'IA avancés.",
+    "servicesList": [
+      {
+        "title": "Développement de Sites Web et d'Applications Web",
+        "description": "Des solutions web personnalisées adaptées aux besoins de votre entreprise.",
+        "features": [
+          "Sites web modernes et réactifs",
+          "Applications Web Progressives (PWA)",
+          "Solutions e-commerce",
+          "Systèmes de gestion de contenu",
+          "Interfaces d'administration et de tableau de bord"
+        ]
+      },
+      {
+        "title": "Automatisation Basée sur l'IA",
+        "description": "Optimisez vos opérations grâce à l'automatisation intelligente.",
+        "features": [
+          "Optimisation des flux de travail",
+          "Automatisation du traitement des données",
+          "Intégrations IA personnalisées",
+          "Traitement intelligent des documents",
+          "Solutions d'analyse basées sur l'IA"
+        ]
+      },
+      {
+        "title": "Développement d'Agents IA Personnalisés",
+        "description": "Des agents IA spécialisés conçus pour vos besoins spécifiques.",
+        "features": [
+          "Assistants virtuels et chatbots",
+          "Solutions IA spécifiques à l'industrie",
+          "Systèmes de traitement du langage naturel",
+          "Outils d'analyse prédictive",
+          "Applications de vision par ordinateur"
+        ]
+      }
+    ]
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Retrouvez nos articles sur l'intelligence artificielle, la tech et la transformation digitale.",
+    "readArticle": "Lire l'article",
+    "articles": [
+      {
+        "title": "L'impact de l'IA sur les PME",
+        "description": "Découvrez comment l'intelligence artificielle transforme les petites et moyennes entreprises.",
+        "imageAlt": "Article 1"
+      },
+      {
+        "title": "Automatisation & Emploi : mythes et réalités",
+        "description": "Un tour d'horizon des idées reçues sur l'automatisation et son impact sur le marché du travail.",
+        "imageAlt": "Article 2"
+      }
+    ]
+  },
+  "newArticlePage": {
+    "title": "Créer un nouvel article",
+    "validation": {
+      "titleMin": "Le titre doit contenir au moins 2 caractères.",
+      "contentMin": "Le contenu doit contenir au moins 10 caractères."
+    },
+    "toast": {
+      "createErrorDescription": "Une erreur est survenue lors de la création de l'article.",
+      "successTitle": "Article créé avec succès !",
+      "successDescription": "Le nouvel article a été publié.",
+      "errorTitle": "Erreur"
+    },
+    "form": {
+      "titleLabel": "Titre",
+      "titlePlaceholder": "Entrez le titre de l'article",
+      "contentLabel": "Contenu",
+      "contentPlaceholder": "Écrivez le contenu de votre article ici",
+      "contentDescription": "Entrez le contenu complet de votre article à l'aide de l'éditeur de texte enrichi.",
+      "imageLabel": "URL de l'image (Facultatif)",
+      "imagePlaceholder": "Entrez l'URL de l'image",
+      "publishedLabel": "Publié",
+      "publishedDescription": "Cochez pour publier l'article immédiatement.",
+      "submitButton": "Créer l'article",
+      "submitting": "Création en cours..."
+    }
   }
 }

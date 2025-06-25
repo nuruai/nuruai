@@ -2,10 +2,10 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "aiSolutions": "AI Solutions",
+    "aisolutions": "AI Solutions",
     "training": "Training",
     "services": "Services",
-    "itSolutions": "IT Services",
+    "itsolutions": "IT Services",
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact"
@@ -13,27 +13,27 @@
   "hero": {
     "badge": "Full-Stack Developer & AI Expert",
     "title": "Building <1>intelligent</1> digital experiences",
-    "subtitle": "I craft modern web applications and AI solutions that help businesses thrive in the digital era.",
+    "subtitle": "We craft modern web applications and AI solutions that help businesses thrive in the digital era.",
     "viewProjects": "View Projects",
     "getInTouch": "Get in Touch",
     "agency": "AI Automation Agency",
     "scroll": "Scroll down"
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "A passionate full-stack developer and entrepreneur with a focus on creating impactful digital solutions.",
-    "paragraph1": "With over 4 years of experience in web development, I've dedicated my career to crafting exceptional user experiences and powerful backend systems. I'm driven by solving complex problems and creating innovative solutions that make a real difference.",
-    "paragraph2": "As a developer, I pride myself on writing clean, maintainable code and staying current with emerging technologies. My passion for AI and automation led me to found Nuruai, where I help businesses leverage the power of artificial intelligence to streamline their operations.",
-    "downloadResume": "Download my Resume",
-    "approachTitle": "My Approach",
-    "approachText": "I'm a passionate developer with a knack for creating modern and efficient web solutions. My journey in the world of code has been driven by a relentless curiosity and a desire to build things that make a difference. I'm always eager to learn new technologies and take on challenging projects that push my skills to the limit.",
-    "valuesTitle": "Key Values",
+    "title": "About Nuruai",
+    "subtitle": "Your Partner in AI-Powered Digital Transformation",
+    "paragraph1": "Nuruai is an agency specialized in automating business processes through artificial intelligence and software development. We accompany African companies in their digital transformation by designing tailor-made solutions to automate repetitive tasks, optimize workflows, and improve productivity.",
+    "paragraph2": "Through a combination of no-code technologies, advanced AI tools, and smart integrations, Nuruai enables businesses to save time, reduce costs, and focus on what truly matters: growth.",
+    "downloadResume": "Download Our Brochure",
+    "approachTitle": "Our Approach",
+    "approachText": "We are driven by a passion for innovation and a commitment to delivering tangible results. Our approach combines deep technical expertise with a keen understanding of unique business needs, ensuring solutions are not only advanced but also practical and impactful.",
+    "valuesTitle": "Core Values",
     "valuesList": [
-      "Excellence in every detail",
-      "Clear communication",
-      "Transparent project management",
-      "Ethical AI development",
-      "Continuous innovation"
+      "Innovation at the core",
+      "Client-centric solutions",
+      "Transparency and integrity",
+      "Scalability and efficiency",
+      "Sustainable growth"
     ]
   },
   "aiSolutions": {
@@ -79,7 +79,7 @@
     ]
   },
   "training": {
-    "title": "AI Training",
+    "title": "Training",
     "subtitle": "Empower yourself and your team with our expert-led AI training programs.",
     "trainingList": [
       {
@@ -152,5 +152,147 @@
     "digitalMarketingDescription": "Designing and implementing effective digital marketing campaigns to increase brand awareness, generate leads, and drive sales.",
     "educationERPTitle": "Education ERP Software",
     "educationERPDescription": "Developing and deploying enterprise resource planning solutions specifically designed for educational institutions to manage administrative tasks."
+  },
+  "contactPage": {
+    "validation": {
+      "nameMin": "Name must be at least 2 characters.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectMin": "Subject must be at least 5 characters.",
+      "messageMin": "Message must be at least 10 characters."
+    },
+    "toast": {
+      "successTitle": "Message sent successfully!",
+      "successDescription": "Thank you for reaching out. I&apos;ll get back to you soon.",
+      "failureTitle": "Failed to send message",
+      "failureDescription": "Please try again later.",
+      "errorTitle": "Error",
+      "errorDescription": "Something went wrong. Please try again."
+    },
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "title": "Contact Us",
+    "subtitle": "Have a question, a project? Our team is here to listen.",
+    "contactInfoTitle": "Contact Information",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Your email address",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message",
+      "sending": "Sending...",
+      "sendButton": "Send Message"
+    }
+  },
+  "contactSection": {
+    "validation": {
+      "nameMin": "Name must be at least 2 characters.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectMin": "Subject must be at least 5 characters.",
+      "messageMin": "Message must be at least 10 characters."
+    },
+    "toast": {
+      "successTitle": "Message sent successfully!",
+      "successDescription": "Thank you for reaching out. I&apos;ll get back to you soon.",
+      "failureTitle": "Failed to send message",
+      "failureDescription": "Please try again later.",
+      "errorTitle": "Error",
+      "errorDescription": "Something went wrong. Please try again."
+    },
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or want to discuss potential collaborations? I&apos;d love to hear from you!",
+    "contactInfoTitle": "Contact Information",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Your email address",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message",
+      "sending": "Sending...",
+      "sendButton": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Nuruai is an AI automation agency specialized in transforming businesses through intelligent software and AI-powered solutions. We help optimize workflows, automate repetitive tasks, and drive innovation for sustainable growth.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "© {{year}} Nuruai. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Specialized solutions to help your business thrive in the digital world. From web development to advanced AI systems."
+  },
+  "servicesSection": {
+    "learnMore": "Learn more",
+    "title": "Our Services",
+    "subtitle": "Specialized solutions to help your business thrive in the digital world. From web development to advanced AI systems.",
+    "servicesList": [
+      {
+        "title": "Website & Web App Development",
+        "description": "Custom web solutions tailored to your business needs.",
+        "features": [
+          "Modern, responsive websites",
+          "Progressive Web Applications (PWAs)",
+          "E-commerce solutions",
+          "Content management systems",
+          "Dashboard & admin interfaces"
+        ]
+      },
+      {
+        "title": "AI-Based Automation",
+        "description": "Streamline your operations with intelligent automation.",
+        "features": [
+          "Workflow optimization",
+          "Data processing automation",
+          "Custom AI integrations",
+          "Intelligent document processing",
+          "AI-powered analytics solutions"
+        ]
+      },
+      {
+        "title": "Custom AI Agent Development",
+        "description": "Specialized AI agents designed for your specific needs.",
+        "features": [
+          "Virtual assistants & chatbots",
+          "Industry-specific AI solutions",
+          "Natural language processing systems",
+          "Predictive analytics tools",
+          "Computer vision applications"
+        ]
+      }
+    ]
+  },
+  "newArticlePage": {
+    "title": "Create a New Article",
+    "form": {
+      "titleLabel": "Title",
+      "titlePlaceholder": "Enter article title",
+      "contentLabel": "Content",
+      "contentPlaceholder": "Write your article content here",
+      "contentDescription": "Enter the full content of your article using the rich text editor.",
+      "imageLabel": "Image URL (Optional)",
+      "imagePlaceholder": "Enter image URL",
+      "publishedLabel": "Published",
+      "publishedDescription": "Check to publish the article immediately.",
+      "submitButton": "Create Article",
+      "submitting": "Creating..."
+    },
+    "toast": {
+      "successTitle": "Article created!",
+      "successDescription": "The article has been successfully created.",
+      "errorTitle": "Error creating article",
+      "errorDescription": "An error occurred while creating the article. Please try again."
+    }
   }
 }
