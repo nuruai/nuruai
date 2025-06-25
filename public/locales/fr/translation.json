@@ -6,6 +6,7 @@
     "training": "Formations",
     "services": "Services",
     "projects": "Projets",
+    "itSolutions": "Services IT",
     "blog": "Blog",
     "contact": "Contact"
   },
@@ -40,16 +41,40 @@
     "subtitle": "Nous fournissons des solutions d'IA de pointe pour aider votre entreprise à croître et à réussir à l'ère numérique.",
     "solutionsList": [
       {
-        "title": "Chatbots IA Personnalisés",
-        "description": "Engagez vos clients 24/7 avec des chatbots intelligents et humains, adaptés aux besoins de votre entreprise."
+        "title": "Solution de Gestion d'E-mails IA",
+        "description": "Automatisez le tri des e-mails, la génération de réponses et la délégation des tâches pour optimiser votre communication et accroître votre productivité."
       },
       {
-        "title": "Automatisation des Processus",
-        "description": "Automatisez les tâches répétitives et optimisez vos processus métier avec nos solutions d'automatisation personnalisées basées sur l'IA."
+        "title": "Automatisation du Support Client par IA",
+        "description": "Déployez des chatbots intelligents et des assistants virtuels pour un support client instantané 24/7, résolvant efficacement les requêtes et améliorant la satisfaction."
       },
       {
-        "title": "Analyse de Données & Insights",
-        "description": "Libérez le potentiel de vos données avec nos modèles d'IA qui fournissent des informations exploitables et des analyses prédictives."
+        "title": "Assistant IA pour la Productivité Commerciale",
+        "description": "Intégrez des assistants IA pour automatiser les tâches répétitives, gérer les plannings et fournir des informations précieuses, libérant votre équipe pour un travail stratégique."
+      },
+      {
+        "title": "Création et Diffusion de Newsletter IA",
+        "description": "Automatisez la génération de contenu de newsletter attrayant et planifiez sa diffusion, personnalisé selon les préférences de votre audience."
+      },
+      {
+        "title": "Automatisation des Ventes et du Support par IA",
+        "description": "Optimisez vos flux de travail de vente et de support avec des outils basés sur l'IA pour la qualification des leads, les suivis et l'assistance après-vente."
+      },
+      {
+        "title": "SEO et Analyse Concurrentielle par IA",
+        "description": "Tirez parti de l'IA pour analyser les tendances du marché, optimiser vos stratégies SEO et obtenir des informations approfondies sur les activités de vos concurrents pour un avantage concurrentiel."
+      },
+      {
+        "title": "Système de Gestion des Leads IA",
+        "description": "Automatisez la capture, l'entretien et la notation des leads avec un système basé sur l'IA qui garantit qu'aucun lead précieux n'est manqué."
+      },
+      {
+        "title": "Planification et Engagement des Médias Sociaux par IA",
+        "description": "Optimisez votre présence sur les médias sociaux avec une IA qui planifie les publications, analyse l'engagement et identifie les tendances pour un impact maximal."
+      },
+      {
+        "title": "Rapports et Analyses Commerciales par IA",
+        "description": "Obtenez des informations exploitables à partir de vos données grâce à des outils de reporting basés sur l'IA qui visualisent les métriques clés et prédisent les tendances futures."
       }
     ]
   },
@@ -58,16 +83,24 @@
     "subtitle": "Donnez à vous-même et à votre équipe les moyens de réussir grâce à nos programmes de formation en IA dirigés par des experts.",
     "trainingList": [
       {
-        "title": "Formation IA en Entreprise",
-        "description": "Dotez votre équipe des compétences en IA nécessaires pour rester compétitive. Nous proposons des programmes de formation sur mesure pour les entreprises."
+        "title": "Formation SEO",
+        "description": "Formation complète sur les stratégies d'optimisation pour les moteurs de recherche afin d'améliorer votre visibilité en ligne."
       },
       {
-        "title": "Coaching Individuel",
-        "description": "Bénéficiez d'un coaching personnalisé en IA pour accélérer votre apprentissage et atteindre vos objectifs spécifiques."
+        "title": "Formation IA",
+        "description": "Cours approfondis couvrant divers aspects de l'intelligence artificielle, des fondamentaux aux applications avancées."
       },
       {
-        "title": "Cours en Ligne",
-        "description": "Accédez à notre bibliothèque de cours en ligne et apprenez à votre rythme, à tout moment et en tout lieu."
+        "title": "Formation en Conseil TI",
+        "description": "Programmes conçus pour vous doter des compétences nécessaires pour fournir des conseils informatiques experts et des solutions stratégiques aux entreprises."
+      },
+      {
+        "title": "Formation en Gestion des Médias Sociaux",
+        "description": "Apprenez à gérer efficacement votre présence sur les médias sociaux, à interagir avec les audiences et à développer votre marque en ligne."
+      },
+      {
+        "title": "Formation en Développement Web",
+        "description": "Cours complets couvrant le développement web front-end, back-end et full-stack à l'aide de technologies modernes."
       }
     ]
   },
@@ -95,5 +128,29 @@
     "notFoundTitle": "Section Introuvable",
     "notFoundDescription": "La section '{{slug}}' que vous recherchez n'existe pas.",
     "goBack": "Retourner"
+  },
+  "itSolutions": {
+    "title": "Solutions Informatiques pour Votre Entreprise",
+    "description": "Nuruai propose une gamme complète de services informatiques pour doter votre entreprise de technologies de pointe et de solutions numériques stratégiques.",
+    "webDesignTitle": "Conception et Développement de Sites Web",
+    "webDesignDescription": "Création de sites web réactifs, conviviaux et performants, adaptés à votre marque et à vos objectifs commerciaux.",
+    "socialMediaTitle": "Gestion des Médias Sociaux",
+    "socialMediaDescription": "Élaboration et exécution de stratégies pour améliorer votre présence en ligne et interagir avec votre public cible sur les plateformes sociales.",
+    "seoTitle": "Optimisation SEO",
+    "seoDescription": "Amélioration de la visibilité de votre site web sur les moteurs de recherche pour générer du trafic organique et augmenter votre portée en ligne.",
+    "aiToolsTitle": "Mise en œuvre d'Outils IA",
+    "aiToolsDescription": "Intégration de solutions IA intelligentes dans vos opérations pour automatiser les tâches, améliorer la prise de décision et accroître l'efficacité.",
+    "itConsultancyTitle": "Conseil en TI",
+    "itConsultancyDescription": "Fourniture de conseils d'experts et d'orientations stratégiques sur l'infrastructure technologique, la transformation numérique et les meilleures pratiques en TI.",
+    "softwareDevTitle": "Développement de Logiciels",
+    "softwareDevDescription": "Création d'applications logicielles personnalisées qui répondent à vos défis commerciaux uniques et optimisent vos flux de travail.",
+    "accountingSoftwareTitle": "Logiciels de Comptabilité",
+    "accountingSoftwareDescription": "Mise en œuvre et personnalisation de solutions logicielles de comptabilité pour gérer vos opérations financières de manière efficace et précise.",
+    "itAuditTitle": "Audit TI",
+    "itAuditDescription": "Réalisation d'évaluations approfondies de vos systèmes informatiques pour identifier les vulnérabilités, assurer la conformité et optimiser les performances.",
+    "digitalMarketingTitle": "Marketing Numérique",
+    "digitalMarketingDescription": "Conception et mise en œuvre de campagnes de marketing numérique efficaces pour accroître la notoriété de la marque, générer des prospects et stimuler les ventes.",
+    "educationERPTitle": "Logiciel ERP Éducation",
+    "educationERPDescription": "Développement et déploiement de solutions de planification des ressources d'entreprise spécifiquement conçues pour les établissements d'enseignement afin de gérer les tâches administratives."
   }
 }

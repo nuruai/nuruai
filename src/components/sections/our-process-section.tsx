@@ -27,7 +27,7 @@ export function OurProcessSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 md:py-24 bg-background" id="our-process">
+    <section className="py-16 md:py-24 m-auto bg-background" id="our-process">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

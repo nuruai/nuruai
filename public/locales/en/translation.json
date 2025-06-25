@@ -5,6 +5,7 @@
     "aiSolutions": "AI Solutions",
     "training": "Training",
     "services": "Services",
+    "itSolutions": "IT Services",
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact"
@@ -40,16 +41,40 @@
     "subtitle": "We provide cutting-edge AI solutions to help your business grow and succeed in the digital age.",
     "solutionsList": [
       {
-        "title": "Custom AI Chatbots",
-        "description": "Engage your customers 24/7 with intelligent, human-like chatbots tailored to your business needs."
+        "title": "AI Email Management Solution",
+        "description": "Automate email sorting, response generation, and task delegation to streamline your communication and boost productivity."
       },
       {
-        "title": "Workflow Automation",
-        "description": "Automate repetitive tasks and streamline your business processes with our custom AI-powered automation solutions."
+        "title": "AI-Powered Customer Support Automation",
+        "description": "Deploy intelligent chatbots and virtual assistants to provide instant, 24/7 customer support, resolving queries efficiently and enhancing satisfaction."
       },
       {
-        "title": "Data Analysis & Insights",
-        "description": "Unlock the power of your data with our AI models that provide actionable insights and predictive analytics."
+        "title": "AI-Powered Assistant for Business Productivity",
+        "description": "Integrate AI assistants to automate repetitive tasks, manage schedules, and provide valuable insights, freeing up your team for strategic work."
+      },
+      {
+        "title": "AI Newsletter Creation and Delivery",
+        "description": "Automate the generation of engaging newsletter content and schedule its delivery, personalized to your audience's preferences."
+      },
+      {
+        "title": "AI Sales and Support Automation",
+        "description": "Streamline your sales and support workflows with AI-driven tools for lead qualification, follow-ups, and post-sales assistance."
+      },
+      {
+        "title": "AI-Driven SEO and Competitor Analysis",
+        "description": "Leverage AI to analyze market trends, optimize your SEO strategies, and gain deep insights into competitor activities for a competitive edge."
+      },
+      {
+        "title": "AI Lead Management System",
+        "description": "Automate lead capture, nurturing, and scoring with an AI-powered system that ensures no valuable lead is missed."
+      },
+      {
+        "title": "AI Social Media Scheduling and Engagement",
+        "description": "Optimize your social media presence with AI that schedules posts, analyzes engagement, and identifies trends for maximum impact."
+      },
+      {
+        "title": "AI-Powered Reporting and Business Insights",
+        "description": "Gain actionable insights from your data with AI-driven reporting tools that visualize key metrics and predict future trends."
       }
     ]
   },
@@ -58,16 +83,24 @@
     "subtitle": "Empower yourself and your team with our expert-led AI training programs.",
     "trainingList": [
       {
-        "title": "Corporate AI Training",
-        "description": "Equip your team with the AI skills they need to stay competitive. We offer customized training programs for businesses."
+        "title": "SEO Training",
+        "description": "Comprehensive training on search engine optimization strategies to improve your online visibility."
       },
       {
-        "title": "One-on-One Coaching",
-        "description": "Get personalized AI coaching to accelerate your learning and achieve your specific goals."
+        "title": "AI Training",
+        "description": "In-depth courses covering various aspects of artificial intelligence, from fundamentals to advanced applications."
       },
       {
-        "title": "Online Courses",
-        "description": "Access our library of online courses and learn at your own pace, anytime, anywhere."
+        "title": "IT Consultancy Training",
+        "description": "Programs designed to equip you with the skills to provide expert IT advice and strategic solutions to businesses."
+      },
+      {
+        "title": "Social Media Management Training",
+        "description": "Learn how to effectively manage social media presence, engage with audiences, and grow your brand online."
+      },
+      {
+        "title": "Web Development Training",
+        "description": "Comprehensive courses covering front-end, back-end, and full-stack web development using modern technologies."
       }
     ]
   },
@@ -95,5 +128,29 @@
     "notFoundTitle": "Section Not Found",
     "notFoundDescription": "The section '{{slug}}' you are looking for does not exist.",
     "goBack": "Go Back"
+  },
+  "itSolutions": {
+    "title": "IT Solutions for Your Business",
+    "description": "Nuruai offers comprehensive IT services to empower your business with cutting-edge technology and strategic digital solutions.",
+    "webDesignTitle": "Website Design and Development",
+    "webDesignDescription": "Crafting responsive, user-friendly, and high-performing websites tailored to your brand and business goals.",
+    "socialMediaTitle": "Social Media Management",
+    "socialMediaDescription": "Developing and executing strategies to enhance your online presence and engage with your target audience across social platforms.",
+    "seoTitle": "SEO Optimization",
+    "seoDescription": "Improving your website's visibility on search engines to drive organic traffic and increase your online reach.",
+    "aiToolsTitle": "Implementation of AI Tools",
+    "aiToolsDescription": "Integrating intelligent AI solutions into your operations to automate tasks, enhance decision-making, and boost efficiency.",
+    "itConsultancyTitle": "IT Consultancy",
+    "itConsultancyDescription": "Providing expert advice and strategic guidance on technology infrastructure, digital transformation, and IT best practices.",
+    "softwareDevTitle": "Software Development",
+    "softwareDevDescription": "Building custom software applications that address your unique business challenges and streamline your workflows.",
+    "accountingSoftwareTitle": "Accounting Software",
+    "accountingSoftwareDescription": "Implementing and customizing accounting software solutions to manage your financial operations efficiently and accurately.",
+    "itAuditTitle": "IT Audit",
+    "itAuditDescription": "Conducting thorough assessments of your IT systems to identify vulnerabilities, ensure compliance, and optimize performance.",
+    "digitalMarketingTitle": "Digital Marketing",
+    "digitalMarketingDescription": "Designing and implementing effective digital marketing campaigns to increase brand awareness, generate leads, and drive sales.",
+    "educationERPTitle": "Education ERP Software",
+    "educationERPDescription": "Developing and deploying enterprise resource planning solutions specifically designed for educational institutions to manage administrative tasks."
   }
 }

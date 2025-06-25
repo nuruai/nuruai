@@ -10,8 +10,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="#home">
               <div className="font-bold text-xl mb-4">
-                <span className="text-primary">Jospin</span>
-                <span className="text-primary/80 pl-2">N.</span>
+                <span className="text-primary">Nuruai</span>
               </div>
             </Link>
             <p className="text-muted-foreground max-w-md">

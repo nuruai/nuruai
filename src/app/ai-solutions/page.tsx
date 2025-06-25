@@ -3,7 +3,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 import { t } from "i18next";
-import { Bot, BrainCircuit, Zap } from "lucide-react";
+import { 
+  Mail, 
+  Headset, 
+  Sparkles, 
+  Newspaper, 
+  ShoppingCart, 
+  BarChart, 
+  Users, 
+  Share2, 
+  PieChart 
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Solution() {
@@ -11,14 +21,20 @@ export default function Solution() {
   const translatedSolutions = t('aiSolutions.solutionsList', { returnObjects: true }) as { title: string, description: string }[];
 
   const solutionIcons = [
-    <Bot key="bot" className="h-10 w-10 text-primary" />,
-    <Zap key="zap" className="h-10 w-10 text-primary" />,
-    <BrainCircuit key="brain" className="h-10 w-10 text-primary" />
-  ];
+    <Mail key="mail" className="h-10 w-10 text-primary" />,
+    <Headset key="headset" className="h-10 w-10 text-primary" />,
+    <Sparkles key="sparkles" className="h-10 w-10 text-primary" />,
+    <Newspaper key="newspaper" className="h-10 w-10 text-primary" />,
+    <ShoppingCart key="shoppingCart" className="h-10 w-10 text-primary" />,
+    <BarChart key="barChart" className="h-10 w-10 text-primary" />,
+    <Users key="users" className="h-10 w-10 text-primary" />,
+    <Share2 key="share2" className="h-10 w-10 text-primary" />,
+    <PieChart key="pieChart" className="h-10 w-10 text-primary" />,
+];
 
   const solutions = Array.isArray(translatedSolutions) ? translatedSolutions.map((solution, index) => ({
     ...solution,
-    icon: solutionIcons[index]
+    icon: solutionIcons[index % solutionIcons.length]
   })) : [];
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },

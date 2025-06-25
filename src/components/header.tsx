@@ -17,8 +17,8 @@ const navItems = [
   { name: "About", href: "/about", key: "nav.about" },
   { name: "AI Solutions", href: "/ai-solutions", key: "nav.aiSolutions" },
   { name: "Training", href: "/training", key: "nav.training" },
-  { name: "Services", href: "/services", key: "nav.services" },
-  { name: "Projects", href: "/projects", key: "nav.projects" },
+  // { name: "Services", href: "/services", key: "nav.services" },
+  { name: "IT Solutions", href: "/it-solutions", key: "nav.itSolutions" },
   { name: "Blog", href: "/blog", key: "nav.blog" },
   { name: "Contact", href: "/contacts", key: "nav.contact" },
 ];

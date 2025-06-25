@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
-import { BookOpen, Users, Video } from "lucide-react";
+import { BookOpen, Users, Video, Search, BrainCircuit, Megaphone, Code } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Training() {
@@ -10,14 +10,18 @@ export default function Training() {
   const translatedTrainings = t('training.trainingList', { returnObjects: true }) as { title: string, description: string }[];
 
   const trainingIcons = [
-    <BookOpen key="book" className="h-10 w-10 text-primary" />,
+    <Search key="search" className="h-10 w-10 text-primary" />,
+    <BrainCircuit key="brain" className="h-10 w-10 text-primary" />,
     <Users key="users" className="h-10 w-10 text-primary" />,
-    <Video key="video" className="h-10 w-10 text-primary" />
+    <Megaphone key="megaphone" className="h-10 w-10 text-primary" />,
+    <Code key="code" className="h-10 w-10 text-primary" />,
+    <BookOpen key="book" className="h-10 w-10 text-primary" />,
+    <Video key="video" className="h-10 w-10 text-primary" />,
   ];
 
   const trainings = Array.isArray(translatedTrainings) ? translatedTrainings.map((training, index) => ({
     ...training,
-    icon: trainingIcons[index]
+    icon: trainingIcons[index % trainingIcons.length]
   })) : [];
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },

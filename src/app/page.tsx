@@ -5,7 +5,7 @@ import { OurProcessSection } from '@/components/sections/our-process-section';
 import { AiSolutionsSection } from '@/components/sections/ai-solutions-section';
 import { TrainingSection } from '@/components/sections/training-section';
 import { ServicesSection } from '@/components/sections/services-section';
-import { ProjectsSection } from '@/components/sections/projects-section';
+import { ItSolutionsSection } from '@/components/sections/it-solutions-section';
 import { ContactSection } from '@/components/sections/contact-section';
 
 export default function Home() {
@@ -17,8 +17,8 @@ export default function Home() {
       <OurProcessSection />
       <AiSolutionsSection />
       <TrainingSection />
-      <ServicesSection />
-      <ProjectsSection />
+      {/* <ServicesSection /> */}
+      <ItSolutionsSection />
       <ContactSection />
     </div>
   );
