@@ -89,7 +89,7 @@ export default function NewArticlePage() {
 
   return (
     <div>
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-4 mt-[80px]">
         <Card className="max-w-3xl mx-auto">
           <CardHeader>
             <CardTitle className="text-2xl">{t("newArticlePage.title")}</CardTitle>

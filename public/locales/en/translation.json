@@ -290,9 +290,27 @@
     },
     "toast": {
       "successTitle": "Article created!",
-      "successDescription": "The article has been successfully created.",
+      "successDescription": "Article created successfully.",
       "errorTitle": "Error creating article",
-      "errorDescription": "An error occurred while creating the article. Please try again."
+      "createErrorDescription": "Failed to create article. Please try again."
     }
+  },
+  "adminLogin": {
+    "title": "Admin Login",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "loggingIn": "Logging in..."
+  },
+  "blogPage": {
+    "title": "Our Blog",
+    "subtitle": "Stay updated with the latest in AI, tech, and digital transformation."
+  },
+  "article": {
+    "publishedOn": "Published on",
+    "backToBlog": "Back to Blog",
+    "readMore": "Read More"
   }
 }

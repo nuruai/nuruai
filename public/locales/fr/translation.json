@@ -274,8 +274,8 @@
     ]
   },
   "blogPage": {
-    "title": "Blog",
-    "subtitle": "Retrouvez nos articles sur l'intelligence artificielle, la tech et la transformation digitale.",
+    "title": "Notre Blog",
+    "subtitle": "Restez informé(e) des dernières nouveautés en IA, technologie et transformation digitale.",
     "readArticle": "Lire l'article",
     "articles": [
       {
@@ -297,10 +297,10 @@
       "contentMin": "Le contenu doit contenir au moins 10 caractères."
     },
     "toast": {
-      "createErrorDescription": "Une erreur est survenue lors de la création de l'article.",
-      "successTitle": "Article créé avec succès !",
-      "successDescription": "Le nouvel article a été publié.",
-      "errorTitle": "Erreur"
+      "successTitle": "Article créé !",
+      "successDescription": "Article créé avec succès.",
+      "errorTitle": "Erreur lors de la création de l'article",
+      "createErrorDescription": "Échec de la création de l'article. Veuillez réessayer."
     },
     "form": {
       "titleLabel": "Titre",
@@ -315,5 +315,19 @@
       "submitButton": "Créer l'article",
       "submitting": "Création en cours..."
     }
+  },
+  "adminLogin": {
+    "title": "Connexion Admin",
+    "usernameLabel": "Nom d'utilisateur",
+    "usernamePlaceholder": "Entrez votre nom d'utilisateur",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "loginButton": "Se connecter",
+    "loggingIn": "Connexion en cours..."
+  },
+  "article": {
+    "publishedOn": "Publié le",
+    "backToBlog": "Retour au Blog",
+    "readMore": "Lire la suite"
   }
 }
