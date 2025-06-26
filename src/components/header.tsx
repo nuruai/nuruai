@@ -19,7 +19,7 @@ const navItems = [
   { name: "Training", href: "/training", key: "nav.training" },
   // { name: "Services", href: "/services", key: "nav.services" },
   { name: "IT Solutions", href: "/it-solutions", key: "nav.itsolutions" },
-  { name: "Blog", href: "/blog", key: "nav.blog" },
+  // { name: "Blog", href: "/blog", key: "nav.blog" },
   { name: "Contact", href: "/contacts", key: "nav.contact" },
 ];
 

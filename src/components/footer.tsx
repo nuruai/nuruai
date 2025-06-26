@@ -25,7 +25,7 @@ export function Footer() {
             <h3 className="font-semibold text-base mb-4">{t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
-              {["Home", "About", "AI Solutions", "Training", "IT Solutions", "Blog", "Contact"].map((item) => (
+              {["Home", "About", "AI Solutions", "Training", "IT Solutions", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
                     href={`/${item.toLowerCase().replace(/ /g, "-").replace("ai-solutions", "ai-solutions").replace("it-solutions", "it-solutions")}`}
