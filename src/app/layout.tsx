@@ -54,7 +54,6 @@ export const metadata: Metadata = {
     site: '@nuruAI',
     // images: ['https://nuruai.com/twitter-image.jpg'],
   },
-  metadataBase: new URL(`${app_url}`),
 };
 
 
