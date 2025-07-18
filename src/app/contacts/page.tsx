@@ -108,7 +108,7 @@ export default function Contact() {
 
   return (
     <div>
-      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/contact-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/contacts.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div variants={itemVariants} className="text-center z-10 pt-10 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("contactPage.title")}</h2>

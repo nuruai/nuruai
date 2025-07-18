@@ -25,7 +25,7 @@ export function Footer() {
             <h3 className="font-semibold text-base mb-4">{t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
-              {["Home", "About", "AI Solutions", "Training", "IT Solutions", "Contact"].map((item) => (
+              {["Home", "About", "AI Solutions", "IT Solutions", "Projects", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
                     href={`/${item.toLowerCase().replace(/ /g, "-").replace("ai-solutions", "ai-solutions").replace("it-solutions", "it-solutions")}`}
@@ -42,12 +42,6 @@ export function Footer() {
             <h3 className="font-semibold text-base mb-4">{t("footer.connect")}
             </h3>
             <div className="flex space-x-3 mb-4">
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="https://github.com/Jospin6" target="_blank" rel="noreferrer">
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Link>
-              </Button>
               <Button variant="ghost" size="icon" asChild>
                 <Link href="https://www.linkedin.com/in/jospin-ndagano" target="_blank" rel="noreferrer">
                   <Linkedin className="h-5 w-5" />
@@ -71,14 +65,6 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              {t("footer.privacyPolicy")}
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              {t("footer.termsOfService")}
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

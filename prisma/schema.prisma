@@ -14,21 +14,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Article {
-  id          Int      @id @default(autoincrement())
-  title       String
-  content     String   @db.Text
-  image       String?
-  published   Boolean  @default(false)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-}
-
-model Admin {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
   password  String
+  role      String   @default("USER")
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  Post Post[]
 }
 
+enum Role {
+  USER
+  ADMIN
+}
 
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  authorId  String
+  image     Bytes?
+  published Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  author User @relation(fields: [authorId], references: [id])
+}

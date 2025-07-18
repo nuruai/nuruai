@@ -5,6 +5,7 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "@/i18n";
 import { ReactNode, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
+import { SessionProvider } from 'next-auth/react';
 
 function LanguageUpdater() {
   const { i18n } = useTranslation();
@@ -16,16 +17,18 @@ function LanguageUpdater() {
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <I18nextProvider i18n={i18n}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <LanguageUpdater />
-        {children}
-      </ThemeProvider>
-    </I18nextProvider>
+    <SessionProvider>
+      <I18nextProvider i18n={i18n}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <LanguageUpdater />
+          {children}
+        </ThemeProvider>
+      </I18nextProvider>
+    </SessionProvider>
   );
 }

@@ -1,36 +1,44 @@
-import { withAuth } from "next-auth/middleware";
+import { withAuth } from "next-auth/middleware"
+import { NextResponse } from "next/server"
 
 export default withAuth(
   function middleware(req) {
-    // Tu peux logger ici si besoin
-    // console.log(req.nextUrl.pathname);
-    // console.log(req.token);
+    // Autoriser l'accès aux pages d'authentification
+    if (req.nextUrl.pathname.startsWith("/auth")) {
+      return NextResponse.next()
+    }
+
+    // Vérifier si l'utilisateur est authentifié
+    const token = req.nextauth.token
+    
+    // Rediriger vers la page de connexion si non authentifié
+    if (!token) {
+      const url = new URL("/", req.nextUrl.origin)
+      url.searchParams.set("callbackUrl", req.nextUrl.pathname)
+      return NextResponse.redirect(url)
+    }
+
+    // Vérifier les rôles si nécessaire
+    // Exemple: Si la route commence par /admin, vérifier si l'utilisateur est admin
+    if (req.nextUrl.pathname.startsWith("/admin") && token.role !== "USER") {
+      return NextResponse.rewrite(new URL("/unauthorized", req.url))
+    }
+
+    return NextResponse.next()
   },
   {
     callbacks: {
-      authorized: ({ token, req }) => {
-        const pathname = req.nextUrl.pathname;
-
-        // Autorise toujours l'accès à /admin/login sans token
-        if (pathname === "/admin/login" || pathname === "/admin/register") {
-          return true;
-        }
-
-        // Pour toutes les autres routes sous /admin/, il faut un token
-        if (pathname.startsWith("/admin")) {
-          return !!token;
-        }
-
-        // Par défaut, autorise tout le reste
-        return true;
+      authorized: ({ token }) => {
+        // Autoriser l'accès aux pages publiques
+        return true
       },
     },
-    pages: {
-      signIn: "/admin/login",
-    },
   }
-);
+)
 
 export const config = {
-  matcher: ["/admin/:path*"], // protège toutes les routes sous /admin
-};
+  matcher: [
+    // Toutes les routes sauf les fichiers statiques et les pages d'authentification
+    '/((?!_next/static|_next/image|favicon.ico|auth/).*)',
+  ],
+}

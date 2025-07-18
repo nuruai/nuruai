@@ -7,6 +7,7 @@ import { TrainingSection } from '@/components/sections/training-section';
 import { ServicesSection } from '@/components/sections/services-section';
 import { ItSolutionsSection } from '@/components/sections/it-solutions-section';
 import { ContactSection } from '@/components/sections/contact-section';
+import { ProjectsSection } from '@/components/sections/projects-section';
 
 export default function Home() {
   return (
@@ -16,9 +17,8 @@ export default function Home() {
       <WhyChooseUsSection />
       <OurProcessSection />
       <AiSolutionsSection />
-      <TrainingSection />
-      {/* <ServicesSection /> */}
       <ItSolutionsSection />
+      <ProjectsSection />
       <ContactSection />
     </div>
   );

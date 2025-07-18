@@ -42,7 +42,7 @@ export default function Solution() {
   };
   return (
     <div>
-      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/ai-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/solution_ia.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div variants={itemVariants} className="text-center z-10 pt-10 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('aiSolutions.title')}</h2>

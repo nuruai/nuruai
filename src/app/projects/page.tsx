@@ -1,16 +1,26 @@
 "use client";
-import { ProjectCard, ProjectCategory, projects } from "@/components/sections/projects-section";
+import { ProjectCard, ProjectCategory} from "@/components/sections/projects-section";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  categories: ProjectCategory[];
+  liveUrl?: string;
+}
+
 export default function Project() {
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all");
+  const projects = (t('projects.projectList', { returnObjects: true }) || []) as Project[];
 
   const filteredProjects = activeCategory === "all"
     ? projects
@@ -27,7 +37,7 @@ export default function Project() {
   };
   return (
     <div>
-      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/projects-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative h-[350px] flex items-center justify-center text-white" style={{ backgroundImage: "url('/project.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div variants={itemVariants} className="text-center z-10 pt-10 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
@@ -38,7 +48,7 @@ export default function Project() {
           </p>
         </motion.div>
       </div>
-      <section className="max-w-5xl mx-auto py-12 px-4">
+      <section className="mx-auto py-12 px-2 md:px-10">
         <div className="flex flex-wrap justify-center gap-2 mb-12">
             {categories.map((category) => (
               <Button

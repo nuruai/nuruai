@@ -22,8 +22,8 @@
   "about": {
     "title": "À Propos de Nuruai",
     "subtitle": "Votre Partenaire en Transformation Digitale par l'IA",
-    "paragraph1": "Nuruai est une agence spécialisée dans l'automatisation des processus métier grâce à l'intelligence artificielle et le développement de logiciels. Nous accompagnons les entreprises africaines dans leur transformation digitale en concevant des solutions sur mesure pour automatiser les tâches répétitives, optimiser les workflows et améliorer la productivité.",
-    "paragraph2": "Grâce à une combinaison de technologies no-code, d'outils IA avancés et d'intégrations intelligentes, Nuruai permet aux entreprises de gagner du temps, de réduire les coûts et de se concentrer sur l'essentiel : la croissance.",
+    "paragraph1": "Nuruai est une agence spécialisée dans l'automatisation des processus métier grâce à l'intelligence artificielle et le développement de logiciels. Nous accompagnons les entreprises dans leur transformation digitale en concevant des solutions sur mesure pour automatiser les tâches répétitives, optimiser les workflows et améliorer la productivité.",
+    "paragraph2": "Grâce à une combinaison de technologies, d'outils IA avancés et d'intégrations intelligentes, Nuruai permet aux entreprises de gagner du temps, de réduire les coûts et de se concentrer sur l'essentiel : la croissance.",
     "downloadResume": "Télécharger Notre Brochure",
     "approachTitle": "Notre Approche",
     "approachText": "Nous sommes animés par une passion pour l'innovation et un engagement à produire des résultats tangibles. Notre approche combine une expertise technique approfondie avec une compréhension aiguisée des besoins uniques de chaque entreprise, garantissant des solutions non seulement avancées mais aussi pratiques et impactantes.",
@@ -329,5 +329,36 @@
     "publishedOn": "Publié le",
     "backToBlog": "Retour au Blog",
     "readMore": "Lire la suite"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Découvrez mes réalisations récentes en développement web, mobile et IA. Chaque projet reflète mon engagement pour la qualité et l'innovation.",
+    "projectList": [
+      {
+        "id": 1,
+        "title": "CVComet",
+        "description": "Un générateur de CV et lettres de motivation IA pour créer des documents pros en quelques secondes grâce à des modèles intelligents et un formulaire dynamique.",
+        "image": "/cvcometImg.png",
+        "categories": ["web", "ai"],
+        "liveUrl": "https://www.cvcomet.com"
+      },
+      {
+        "id": 2,
+        "title": "ChatDocs",
+        "description": "Discutez avec vos fichiers PDF grâce à l'IA et au RAG pour extraire rapidement les informations clés.",
+        "image": "/filmfusion.png",
+        "categories": ["web", "ai"],
+        "liveUrl": "/"
+      },
+      {
+        "id": 3,
+        "title": "QwickFiche",
+        "description": "Générez automatiquement des fiches produits optimisées avec l'IA en quelques secondes.",
+        "image": "/recipe.png",
+        "categories": ["web", "ai"],
+        "liveUrl": "/"
+      }
+    ]
   }
+
 }
